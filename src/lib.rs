@@ -7,7 +7,7 @@ extern {
         
     pub fn proof_of_life(i: libc::c_int, j: libc::c_int) -> libc::c_float;
 
-    pub fn set_image_buffer( buffer: *const u8, size: libc::c_int) -> libc::c_int;
+    pub fn set_image_buffer( buffer: *const u8, size: libc::c_int, width: u32, height: u32) -> libc::c_int;
 
     //fn set_image( buffer: *const u8, size: libc::c_int) -> libc::c_int;
 

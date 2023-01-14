@@ -7,7 +7,7 @@
 #include <string>
 
 typedef uint8_t byte;
-extern "C" int set_image_buffer(byte *buffer, int size);
+extern "C" int set_image_buffer(byte *buffer, int size, u_int32_t width, u_int32_t height);
 
 extern "C" float proof_of_life(int one, int two);
 

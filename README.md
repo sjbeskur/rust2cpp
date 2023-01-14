@@ -18,6 +18,13 @@ sudo make install
 
 This will make and compile the Cpp project and install the shared library into your default lib directory.
 
+## Very IMPORTANT NOTE: 
+In order for rust to find you shared libraries you must make sure that you have set the proper environment variable:  
+
+```bash
+export LD_LIBRARY_PATH=/usr/local/lib
+```
+
 ## Rust Instructions
 
 The Rust program takes and image file as input, reads the image bytes, and passes this array to the cppoxide library for analysis.
